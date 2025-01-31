@@ -50,8 +50,12 @@ const RenderItem = () => {
           </Typography>
         </Box>
         <Box sx={[isMobile ? LAYOUT.flexCCenter : LAYOUT.flexCCenter]}>
-          <ButtonComp title="Hire Me" />
-          <ButtonComp title="Download Cv" style={styles(isDesktop).button} />
+          <ButtonComp title="Hire Me" link="mail" />
+          <ButtonComp
+            title="Download Cv"
+            link
+            style={styles(isDesktop).button}
+          />
         </Box>
         <Card sx={{ background: COLORS.DIM_GREY }}>
           <Box sx={[LAYOUT.flexRowAround, { p: 2 }]}>

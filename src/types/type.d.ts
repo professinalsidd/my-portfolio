@@ -1,6 +1,7 @@
 type ButtonProps = {
   style?: React.CSSProperties;
   title: string;
+  link?: string;
 };
 type CardProps = {
   title: string;
