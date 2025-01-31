@@ -9,6 +9,7 @@ import { Box, Card, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import React, { Fragment } from "react";
 import ExperienceComp from "../experience/experience";
+import SkillsComp from "../skills/skills";
 
 const RenderItem = () => {
   const { isDesktop, isTablet, isMobile } = useResponsive();
@@ -98,6 +99,7 @@ const HeroComp = () => {
         <NavBarComp />
         {RenderItem()}
         <ExperienceComp />
+        <SkillsComp />
       </Box>
     </Fragment>
   );

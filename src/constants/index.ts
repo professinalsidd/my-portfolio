@@ -118,3 +118,25 @@ export const experienceData = [
     ],
   },
 ];
+
+// skills
+
+export const skills = [
+  "React Native",
+  "React JS,TS",
+  "Vite JS,TS",
+  "Next JS,TS",
+  "Node js express",
+  "Mongo DB",
+  "Github",
+  "Gitlab",
+  "Javascript",
+  "Typescript",
+  "HTML 5",
+  "CSS",
+  "Figma",
+  "Antd Design",
+  "Material Ui",
+  "Bootstrap",
+  "Jira",
+];
