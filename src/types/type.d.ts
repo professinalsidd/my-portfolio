@@ -3,9 +3,10 @@ type ButtonProps = {
   title: string;
   link?: string;
 };
-type CardProps = {
+
+type CardProps<T = string | { name: string; link?: string }> = {
   title: string;
-  data: { name: string; link?: string }[];
+  data: T[];
   contentStyle?: React.CSSProperties;
   type?: string;
 };

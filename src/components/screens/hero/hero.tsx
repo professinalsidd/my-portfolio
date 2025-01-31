@@ -53,7 +53,7 @@ const RenderItem = () => {
           <ButtonComp title="Hire Me" link="mail" />
           <ButtonComp
             title="Download Cv"
-            link
+            link=""
             style={styles(isDesktop).button}
           />
         </Box>

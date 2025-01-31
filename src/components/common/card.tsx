@@ -22,11 +22,15 @@ const CardComp = ({ title, data, contentStyle, type }: CardProps) => {
               <Typography
                 sx={styles.projectText}
                 component="a"
-                href={project.link}
+                href={
+                  typeof project === "object" && project.link
+                    ? project.link
+                    : undefined
+                }
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {project.name}
+                {typeof project === "object" ? project.name : project}
               </Typography>
             </Card>
           ))}
@@ -38,14 +42,10 @@ const CardComp = ({ title, data, contentStyle, type }: CardProps) => {
         </Box>
       ) : (
         <Box sx={{ ...styles.content, ...contentStyle }}>
-          {data.map((item: any, idx) => (
+          {data.map((item, idx) => (
             <Card key={idx} sx={styles.card}>
-              <Typography
-                sx={{
-                  color: COLORS.LIGHT_WHITE,
-                }}
-              >
-                {item}
+              <Typography sx={{ color: COLORS.LIGHT_WHITE }}>
+                {typeof item === "string" ? item : item.name}
               </Typography>
             </Card>
           ))}
