@@ -10,6 +10,7 @@ import Image from "next/image";
 import React, { Fragment } from "react";
 import ExperienceComp from "../experience/experience";
 import SkillsComp from "../skills/skills";
+import EducationComp from "../education/education";
 
 const RenderItem = () => {
   const { isDesktop, isTablet, isMobile } = useResponsive();
@@ -100,6 +101,7 @@ const HeroComp = () => {
         {RenderItem()}
         <ExperienceComp />
         <SkillsComp />
+        <EducationComp />
       </Box>
     </Fragment>
   );
