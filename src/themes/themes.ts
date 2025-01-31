@@ -29,6 +29,7 @@ export const COLORS = {
   ORANGE: "#E66702",
   DIM_WHITE: "#D0D0D0",
   MEDIUM_WHITE: "#353535",
+  GREY_PRIMARY: "#282828",
 };
 
 // Layout section for skipped to re use this lines

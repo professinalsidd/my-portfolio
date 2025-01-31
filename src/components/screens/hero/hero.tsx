@@ -14,6 +14,7 @@ import EducationComp from "../education/education";
 import ProjectsComp from "../projects/projects";
 import HobbiesComp from "../hobbies/hobbies";
 import CertificatesComp from "../certificates/certifcates";
+import FooterComp from "@/components/footer/footer";
 
 const RenderItem = () => {
   const { isDesktop, isTablet, isMobile } = useResponsive();
@@ -108,6 +109,7 @@ const HeroComp = () => {
         <ProjectsComp />
         <HobbiesComp />
         <CertificatesComp />
+        <FooterComp />
       </Box>
     </Fragment>
   );
