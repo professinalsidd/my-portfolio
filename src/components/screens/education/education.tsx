@@ -7,12 +7,13 @@ const EducationComp = () => {
     <CardComp
       title="Education"
       data={education}
-      contentStyle={{
-        display: "flex",
-        width: "100%",
-        justifyContent: "flex-start",
-        alignItems: "flex-start",
-      }}
+      contentStyle={
+        {
+          // display: "flex",
+          // justifyContent: "flex-start",
+          // alignItems: "flex-start",
+        }
+      }
     />
   );
 };

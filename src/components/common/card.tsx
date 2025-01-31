@@ -37,7 +37,7 @@ const CardComp = ({ title, data, contentStyle, type }: CardProps) => {
           </Box>
         </Box>
       ) : (
-        <Box style={{ ...styles.content, contentStyle }}>
+        <Box sx={{ ...styles.content, ...contentStyle }}>
           {data.map((item, idx) => (
             <Card key={idx} sx={styles.card}>
               <Typography
@@ -84,7 +84,6 @@ const styles = {
     padding: "15px",
     textAlign: "center",
     transition: "0.3s",
-    boxShadow: "0px 4px 10px rgba(89, 79, 79, 0.4)",
     "&:hover": {
       boxShadow: "0px 6px 15px rgba(255, 165, 0, 0.6)",
       transform: "scale(1.05)",

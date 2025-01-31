@@ -57,7 +57,6 @@ const styles = {
     color: COLORS.DARK_ORANGE,
     fontSize: { xs: 16, md: 30 },
     textAlign: "left",
-    textDecoration: "underline",
     fontWeight: "900",
   },
   card: {

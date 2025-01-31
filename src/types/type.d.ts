@@ -4,7 +4,7 @@ type ButtonProps = {
 };
 type CardProps = {
   title: string;
-  data: string[];
+  data: { name: string; link?: string }[];
   contentStyle?: React.CSSProperties;
   type?: string;
 };
