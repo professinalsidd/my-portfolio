@@ -1,132 +1,91 @@
+"use client";
+
+import ButtonComp from "@/components/common/button";
 import NavBarComp from "@/components/navbar/navbar";
-import { Box, Button, Card, Grid, Typography } from "@mui/material";
+import { generalInfo } from "@/constants";
+import { styles } from "@/styles/home";
+import { COLORS, LAYOUT, useResponsive } from "@/themes/themes";
+import { Box, Card, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import React, { Fragment } from "react";
 
-const smallDb = [
-  {
-    name: "experience",
-    num: "3+",
-  },
-  {
-    name: "Projects",
-    num: "50+",
-  },
-  {
-    name: "Start Journey",
-    num: "26 sep 2021",
-  },
-];
-
 const HeroPage = () => {
+  const { isDesktop, isTablet, isMobile } = useResponsive();
   return (
     <Fragment>
-      <Box
-        sx={{
-          //minHeight: "100vh",
-          //height: "auto",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          borderTop: "10px solid #505050",
-          borderRight: "10px solid #505050",
-          borderLeft: "10px solid #505050",
-          borderRadius: "20px",
-          flexDirection: "column",
-          background: "#121212",
-          m: 5,
-        }}
-      >
+      <Box sx={[LAYOUT.columnCCenter, styles().root]}>
         <NavBarComp />
         <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            width: "100%",
-            minHeight: "100vh",
-            height: "auto",
-          }}
+          sx={[
+            isMobile ? LAYOUT.columnCCenter : LAYOUT.flexRowAround,
+            styles(isDesktop).subRoot,
+          ]}
         >
-          <Grid
-            xs={12}
-            md={6}
-            item
-            sx={{ gap: 5, display: "flex", flexDirection: "column" }}
-          >
+          <Grid xs={12} md={6} item sx={styles().box1}>
             <Box>
-              <Typography variant="h4" color="#666666" fontWeight="bold">
+              <Typography
+                color={COLORS.DIM_MEDIUM}
+                sx={{ fontSize: { xs: 20, md: 25 } }}
+                fontWeight="bold"
+              >
                 Hi, I am
               </Typography>
-              <Typography variant="h3" color="#8e8e8d" fontWeight="bold">
+              <Typography
+                color={COLORS.LIGHT_WHITE}
+                sx={{ fontSize: { xs: 25, md: 40 } }}
+                fontWeight="bold"
+              >
                 Siddharth Jain
               </Typography>
-              <Typography variant="h2" color="#F36B01" fontWeight="bold">
+              <Typography
+                color={COLORS.DARK_ORANGE}
+                sx={{ fontSize: { xs: 28, md: 55 } }}
+                fontWeight="bold"
+              >
                 Software Engineer
               </Typography>
             </Box>
-            <Box>
-              <Button
-                sx={{
-                  background: "#F96D00",
-                  color: "white",
-                  height: 30,
-                  p: "10px 20px",
-                  m: 2,
-                }}
-              >
-                Hire Me
-              </Button>
-              <Button
-                sx={{
-                  background: "#1b1611",
-                  color: "white",
-                  height: 30,
-                  p: "10px 20px",
-                  m: 2,
-                  border: "2px solid #c5c5c5",
-                  borderRadius: 1,
-                }}
-              >
-                Download Cv
-              </Button>
+            <Box sx={[isMobile ? LAYOUT.flexCCenter : LAYOUT.flexCCenter]}>
+              <ButtonComp title="Hire Me" />
+              <ButtonComp
+                title="Download Cv"
+                style={styles(isDesktop).button}
+              />
             </Box>
-            <Card sx={{ background: "#1D1C1B" }}>
-              <Box
-                sx={{
-                  display: "flex",
-                  p: 2,
-                  justifyContent: "space-around",
-                  alignItems: "center",
-                }}
-              >
-                {smallDb.map((item, index) => (
+            <Card sx={{ background: COLORS.DIM_GREY }}>
+              <Box sx={[LAYOUT.flexRowAround, { p: 2 }]}>
+                {generalInfo.map((item, index) => (
                   <Fragment key={index}>
-                    <Box>
-                      <Typography sx={{ color: "#E66702" }}>
+                    <Box sx={{ p: { xs: 1, md: 2 } }}>
+                      <Typography
+                        sx={{
+                          color: COLORS.ORANGE,
+                          fontSize: { xs: 12, md: 16 },
+                        }}
+                      >
                         {item.num}
                       </Typography>
                       <Typography
-                        sx={{ color: "#D0D0D0", textTransform: "capitalize" }}
+                        sx={{
+                          color: COLORS.DIM_WHITE,
+                          textTransform: "capitalize",
+                          fontSize: { xs: 12, md: 16 },
+                        }}
                       >
                         {item.name}
                       </Typography>
                     </Box>
-                    {index !== 2 && (
-                      <span
-                        style={{ width: 2, height: 50, background: "#353535" }}
-                      ></span>
-                    )}
+                    {index !== 2 && <span style={styles().verticalLine}></span>}
                   </Fragment>
                 ))}
               </Box>
             </Card>
           </Grid>
-          <Grid xs={12} md={6} item>
+          <Grid xs={12} md={6} item mt={{ xs: 5 }}>
             <Image
               src="/logo.png"
-              width={600}
-              height={600}
+              width={isMobile ? 220 : isTablet ? 300 : 600}
+              height={isMobile ? 220 : isTablet ? 300 : 600}
               style={{
                 objectFit: "contain",
               }}
