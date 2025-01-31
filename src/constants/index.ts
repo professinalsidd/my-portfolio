@@ -220,3 +220,7 @@ export const certificates = [
     link: "https://mega.nz/file/d64TEIYK#zhz3FmswhbVOmnuKZUj5p0HMCVl9uWt72GwIskSvEKE",
   },
 ];
+
+export const education = [
+  "Bachelor of Computer Applications [B.C.A] 2017-2020",
+];
