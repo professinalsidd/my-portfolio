@@ -65,7 +65,7 @@ const RenderItem = () => {
                   <Typography
                     sx={{
                       color: COLORS.ORANGE,
-                      fontSize: { xs: 12, md: 16 },
+                      fontSize: { xs: 13, md: 16 },
                     }}
                   >
                     {item.num}
@@ -74,7 +74,7 @@ const RenderItem = () => {
                     sx={{
                       color: COLORS.DIM_WHITE,
                       textTransform: "capitalize",
-                      fontSize: { xs: 12, md: 16 },
+                      fontSize: { xs: 15, md: 16 },
                     }}
                   >
                     {item.name}
