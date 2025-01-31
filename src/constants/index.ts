@@ -140,3 +140,33 @@ export const skills = [
   "Bootstrap",
   "Jira",
 ];
+
+// projects
+export const projects = [
+  { name: "Coding Ace (Web)", link: "https://codingace.online/" },
+  { name: "Learnz Landing Page (Web)", link: "#" },
+  { name: "Learnz Admin Panel (Web)", link: "#" },
+  { name: "Learnz User Portal (Web)", link: "#" },
+  { name: "Sahej (App)", link: "#" },
+  { name: "Wintej (Web)", link: "https://wintej.com/" },
+  {
+    name: "Wintej (App)",
+    link: "https://apps.apple.com/in/app/wintej/id6477755807",
+  },
+  {
+    name: "Dank (App)",
+    link: "https://play.google.com/store/apps/details?id=com.joindank.dankapp&hl=en_IN",
+  },
+  {
+    name: "My Bill wallet (App)",
+    link: "#",
+  },
+  { name: "Baap Network (Web)", link: "https://baapnetwork.codetrex.in/login" },
+  { name: "Vantaan Taxi (Web)", link: "#" },
+  { name: "Stock Hisab Panel (Web)", link: "#" },
+  { name: "Fixcel (Web)", link: "#" },
+  {
+    name: "Github Repo",
+    link: "https://github.com/professinalsidd?tab=repositories",
+  },
+];

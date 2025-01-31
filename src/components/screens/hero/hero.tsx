@@ -11,6 +11,7 @@ import React, { Fragment } from "react";
 import ExperienceComp from "../experience/experience";
 import SkillsComp from "../skills/skills";
 import EducationComp from "../education/education";
+import ProjectsComp from "../projects/projects";
 
 const RenderItem = () => {
   const { isDesktop, isTablet, isMobile } = useResponsive();
@@ -102,6 +103,7 @@ const HeroComp = () => {
         <ExperienceComp />
         <SkillsComp />
         <EducationComp />
+        <ProjectsComp />
       </Box>
     </Fragment>
   );

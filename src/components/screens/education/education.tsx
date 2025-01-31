@@ -5,7 +5,7 @@ import React, { Fragment } from "react";
 const EducationComp = () => {
   return (
     <Fragment>
-      <Box sx={[LAYOUT.columnEnd, { width: "90%" }]}>
+      <Box sx={[LAYOUT.columnEnd, { width: "90%", mt: 2 }]}>
         <Typography sx={styles.heading}>Education</Typography>
       </Box>
       <Box sx={styles.content}>
