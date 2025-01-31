@@ -24,13 +24,22 @@ function NavBarComp() {
             CV
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}></Box>
+          <Box
+            sx={{
+              display: { xs: "flex", md: "none" },
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+            }}
+          ></Box>
           <Typography
             variant="h5"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
-            sx={[styles.heading, { display: { xs: "flex", md: "none" } }]}
+            sx={[
+              styles.heading,
+              { display: { xs: "flex", md: "none" }, textAlign: "left" },
+            ]}
           >
             CV
           </Typography>

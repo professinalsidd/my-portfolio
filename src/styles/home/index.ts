@@ -22,6 +22,7 @@ export const styles = (isDesktop?: boolean, isMobile?: boolean) => ({
     width: "100%",
     minHeight: isDesktop ? "100vh" : "50vh",
     height: "auto",
+    mt: 2,
   },
   verticalLine: {
     width: 2,

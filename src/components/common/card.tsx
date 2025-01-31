@@ -76,7 +76,7 @@ const styles = {
     justifyContent: { xs: "flex-start" },
     alignItems: "center",
     width: "90%",
-    gap: 2,
+    gap: { xs: 0.5, md: 2 },
   },
   projectCard: {
     background: COLORS.DIM_GREY,
