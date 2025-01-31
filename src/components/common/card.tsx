@@ -38,7 +38,7 @@ const CardComp = ({ title, data, contentStyle, type }: CardProps) => {
         </Box>
       ) : (
         <Box sx={{ ...styles.content, ...contentStyle }}>
-          {data.map((item, idx) => (
+          {data.map((item: any, idx) => (
             <Card key={idx} sx={styles.card}>
               <Typography
                 sx={{
