@@ -3,6 +3,7 @@ export const navbar = [
   "Home",
   "Experience",
   "Skills",
+  "Education",
   "Projects",
   "Hobbies",
   "Certificates",
@@ -168,5 +169,54 @@ export const projects = [
   {
     name: "Github Repo",
     link: "https://github.com/professinalsidd?tab=repositories",
+  },
+];
+
+// Hobbies
+
+export const hobbies = ["Gaming", "Traveling", "Exploration", "Coding"];
+
+// certificates
+
+export const certificates = [
+  {
+    name: "Mern stack full course",
+    link: "https://mega.nz/file/B75zjDwJ#2jiDLoNfC5jV_6cGQVtZy4ataeiGTDRnAr07rtv6YTo",
+  },
+  {
+    name: "Web Amazon",
+    link: "https://mega.nz/file/BiZDCCSZ#8y5lncCXKixHaRjX6lBAo94NCzNDQsruCmmwQ5VEj2M",
+  },
+  {
+    name: "Digital Marketing",
+    link: "https://mega.nz/file/tix0lTyI#lVbcbhwtWmpfT0FlkLd-9-wpsPbFOGookWG1h4jFrfU",
+  },
+  {
+    name: "Web Development Bootcamp",
+    link: "#",
+  },
+  {
+    name: "Network Computer Education",
+    link: "https://mega.nz/file/VzhBTAqT#GId1zvZe1Qn6h5WW9MZdGhZVPFOZm46fhwM6JA-ZmyI",
+  },
+  {
+    name: "CCC",
+    link: "https://mega.nz/file/8qJAVLYa#4Hv7MYwcNpBALSec0YlUH_pNvVTIa2WPffmazjGLACk",
+  },
+  {
+    name: "BPO",
+    link: "https://mega.nz/file/FmwTWaoa#dEldOMEwrDMgjuBsJcySnIzx3HJDY-5AqbK9MRy58yY",
+  },
+  {
+    name: "Hi-Tech",
+    link: "https://mega.nz/file/A75BVJBS#-45sSQn1uaTaKWyPF0IIzOKIkPiN76ftxkoZTpuLDto",
+  },
+  {
+    name: "HDFC-Life",
+    link: "https://mega.nz/file/hjoDiYLQ#tI9pW5WJuv4O50LDjUigvUE6ILxBNY7mssSPz-124YM",
+  },
+  {
+    name: "SAS Training",
+    link: "https://mega.nz/file/d64TEIYK#zhz3FmswhbVOmnuKZUj5p0HMCVl9uWt72GwIskSvEKE",
   },
 ];

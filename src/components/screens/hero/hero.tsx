@@ -12,6 +12,8 @@ import ExperienceComp from "../experience/experience";
 import SkillsComp from "../skills/skills";
 import EducationComp from "../education/education";
 import ProjectsComp from "../projects/projects";
+import HobbiesComp from "../hobbies/hobbies";
+import CertificatesComp from "../certificates/certifcates";
 
 const RenderItem = () => {
   const { isDesktop, isTablet, isMobile } = useResponsive();
@@ -104,6 +106,8 @@ const HeroComp = () => {
         <SkillsComp />
         <EducationComp />
         <ProjectsComp />
+        <HobbiesComp />
+        <CertificatesComp />
       </Box>
     </Fragment>
   );
